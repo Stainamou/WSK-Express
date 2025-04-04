@@ -21,7 +21,7 @@ const listAllUsers = () => {
   return userItems;
 };
 
-const findUserById = () => {
+const findUserById = (id) => {
   return userItems.find((item) => item.user_id == id);
 };
 
