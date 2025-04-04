@@ -1,7 +1,7 @@
 import { addUser, findUserById, listAllUsers } from '../models/user-model.js';
 
 const getUser = (req, res) => {
-  res.join(listAllUsers());
+  res.json(listAllUsers());
 };
 
 const getUserById = (req, res) => {
