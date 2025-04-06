@@ -57,4 +57,8 @@ const removeUser = async (id) => {
   }
 };
 
-export { listAllUsers, findUserById, addUser, modifyUser, removeUser };
+const getUserByUsername = async (username) => {
+  const sql = `SELECT * FROM users WHERE username = ?`;
+};
+
+export { getUserByUsername, listAllUsers, findUserById, addUser, modifyUser, removeUser };
